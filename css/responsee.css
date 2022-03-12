@@ -933,3 +933,29 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   height: 150px;
   padding: 40px;
 }
+
+.all_ul
+{
+  list-style-type:none;
+}
+
+#all_a
+{
+  color:#152732;
+  font-size: large;
+}
+
+.kutu
+{
+  width: 30%;
+  height:270px;
+  float:left;
+  padding:5px;
+  margin:18px;
+
+}
+
+.kutu:hover  img{
+  transform: scale(1.10);
+  transition:all .5s ease;
+  }
