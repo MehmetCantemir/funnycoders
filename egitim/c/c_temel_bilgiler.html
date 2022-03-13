@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="C,printf,scanf,işlem,dörtişlem,funnycoders,değişken,integer,float,double,char"/>
+    <meta name="description" content="Temel C Programlama Bilgileri">
+    <meta name="author" content="Mehmet Cantemir">
+    <title>C Programlama Temel Bilgiler</title>
+    <link rel="stylesheet" href="../../css/components.css">
+
+
+
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/responsee.css">
+    <link rel="stylesheet" href="../../owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../../owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="../../css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/validation.js"></script>
+
+</head>  
+  
+  <body class="size-1140">
+  	
+    <!-- HEADER -->
+    <header class="banner">  
+      <!-- Top Bar -->
+      
+      
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="../../index.html" class="logo">Funnycoders.com</a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="../../index.html">Anasayfa</a></li>
+              <li><a href="../../products.html">Eğitimler</a></li>
+              <li><a href="../../haber.html">Haber</a></li>
+              <li><a href="../../about.html">Biz Kimiz?</a></li>
+              <li><a href="../../forum.html">Forum</a></li>
+              <li><a href="../../contact.html">İletişim</a></li>
+              <li><a href="../../signed.html">Giriş / Üye Ol</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+          <header class="about_section  background-primary text-center">
+              <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1"><a href="unity_index.html">C Temel Bilgiler</a></h1>          
+          </header>
+        <div class="section background-white"> 
+            <center><h2><b>Değişken Tanımlama ve Ekrana Yazdırma</b></h2></center>
+            <br>
+            <center><img src="../c/c_img/c_code_0.png"> </center>
+            <center><h3>Ekran Çıktısı : </h3></center>
+         <center><img src="../c/c_img/c_console_0.png"></center>
+         <br>
+
+            <!-- Kod kısmı-->
+            <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
+                <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
+                <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                <!-- Değişken Tanımlama -->
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">sayi = 10;</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">double </span><span class="enlighter-g1">sayi1 = 10.5;</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">float </span><span class="enlighter-g1">sayi2 = 17.5;</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">char </span><span class="enlighter-g1">karakter = 'a';</span></div></div>
+                <div class=""><div></div></div>
+                <!-- Printf Fonksiyonu -->
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n Integer : %d",sayi);</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n Double : %lf",sayi1);</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n Float : %.2f",sayi2);</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n* Char : %.2c",karakter);</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("Hello World");</span></div></div>
+            
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
+                <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                </div>
+                </div>
+                </div>
+                <br><br>
+
+                <center><h2><b>Kullanıcıdan Veri Alma (scanf)</b></h2></center>
+               
+                <center><img src="../c/c_img/c_scanf_code.png"></center><br>
+                    
+                <center><h2>Ekran Çıktısı: </h2><img src="../c/c_img/c_scanf_output.png"></center>
+                <br>
+                 
+                
+                <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
+                    <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                    <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                    <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                    <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
+                    <!-- Include Kısmı -->
+                    <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                    <!-- Değişken Tanımlama -->
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">number;</span></div></div>
+                    <!-- Printf - Scanf Fonksiyonu -->
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("Bir sayı giriniz : ");</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">scanf</span><span class="enlighter-g1">("%d",&number);</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("Girilen Sayı : %d",number);</span></div></div>
+                        
+                    <!-- Return -->
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <center><h2><b>İşlem Operatörleri</b></h2></center>
+                    <center><img src="../c/c_img/c_dortislem_code.png"></center>
+                    <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
+                        <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                        <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                        <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                        <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
+                        <!-- Include Kısmı -->
+                        <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                        <!-- Değişken Tanımlama -->
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">x=15 , y=3 , z;</span></div></div>
+                        <!-- Printf - Scanf Fonksiyonu -->
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">//Toplama işlemi</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("x ve y'nin toplamı = %d",x+y);</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">//Çıkarma işlemi</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("x ve y çıkarma sonucu = %d",x-y);</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">//Çarpma işlemi</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("x ve y'nin çarpımı = %d",x*y);</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">//Bölme işlemi</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("x ve y'nin bölümü  = %d",x/y);</span></div></div>
+                        
+                            
+                        <!-- Return -->
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
+                        <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                        </div>
+                        </div>
+                        </div>
+
+
+                        <center><img src="../c/c_img/c_islem_code.png"></center>
+                
+
+                        <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
+                            <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                            <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                            <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                            <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
+                            <!-- Include Kısmı -->
+                            <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                            <!-- Değişken Tanımlama -->
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">x=15 , y=3 , z;</span></div></div>
+                            <!-- Printf - Scanf Fonksiyonu -->
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">number1 = 10 , number2 = 15 , number3 = 5 , number4 = 0 , number5 = 1;</div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number1+=number2;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number1: %d",number1);</span></div></div>
+
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number2-=number1;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number2: %d",number2);</span></div></div>
+
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number3*=number1;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number3: %d",number3);</span></div></div>
+                            
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number2/=number3;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number2: %d",number2);</span></div></div>
+                                
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number4++;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number4: %d",number4);</span></div></div>
+                           
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">number5--;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n number5: %d",number5);</span></div></div>
+                           
+                            <!-- Return -->
+
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
+                            <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                            </div>
+                            </div>
+                            </div>
+
+
+                    
+    
+
+
+
+        </div> 
+      </article>
+    </main>
+    
+    <!--FOOTER -->
+    <footer>
+      <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Our Philosophy</h4>
+              <p class="text-size-20"><em>"Kodlama alanında insanları bilgilendirirken sameti düdüklemek"</em><p>
+                            
+              <div class="line">
+                
+                <div class="margin">
+                  <div class="s-12 m-12 l-4 margin-m-bottom">
+                   
+                  </div>
+                  <div class="s-12 m-12 l-8 margin-m-bottom">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Bize Ulaşın</h4>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-placepin text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Adres:</b> Istanbul</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> funnycoders.com</a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-smartphone text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>Telefon:</b> 0533 333 33 33</p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-twitter text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>Twitter</b></a></p>
+                </div>
+              </div>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-facebook text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11">
+                  <p><a href="/" class="text-primary-hover"><b>Facebook</b></a></p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4">
+              <h4 class="text-uppercase text-strong">Mesajınızı iletin</h4>
+              <form class="customform text-white">
+                <div class="line">
+                  <div class="margin">
+                    <div class="s-12 m-12 l-6">
+                      <input name="email" class="required email border-radius" placeholder="Mail adresinizi girin.." title="Your e-mail" type="text" />
+                    </div>
+                    <div class="s-12 m-12 l-6">
+                      <input name="name" class="name border-radius" placeholder="Adınızı girin.." title="Your name" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="s-12">
+                  <textarea name="message" class="required message border-radius" placeholder="İletmek istediğiniz mesaj.." rows="3"></textarea>
+                </div>
+                <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit">İletin</button></div> 
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+           <!-- Bottom Footer -->
+           <section class="padding background-dark">
+            <div class="line">
+              <div class="s-12 l-6">
+                <p class="text-size-12">Copyright 2022, Funnycoders Technology </p>
+                <p class="text-size-12">All images have been purchased from Funnycoders Technology A.Ş. Do not use the images in your website.</p>
+              </div>
+              <div class="s-12 l-6">
+               
+              </div>
+            </div>
+          </section>
+        </footer> 
+        <script type="text/javascript" src="js/responsee.js"></script>
+        <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/template-scripts.js"></script>
+     
+   </body>
+</html>
