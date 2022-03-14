@@ -4,7 +4,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="unity" content="unity cisim arası mesafe, unity, cisim" />
+    <meta name="keywords" content="Unity3D,Unity,uzaklık,ikicisimarasıuzaklık,cisim,funnycoders,mesafe" />
+    <meta name="description" content="Unity 3D iki cisim arası mesafe">
+    <meta name="author" content="Talha Enes İslamoğlu">
     <title>Unity</title>
     <link rel="stylesheet" href="../../css/components.css">
 
@@ -58,16 +60,47 @@
       <article>
           <header class="about_section  background-primary text-center">
               <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1"><a href="unity_index.html">UNITY</a></h1>
-              <h5 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">İki Cismin Mesafe Farkı</h5>
+              <h5 class="text-white margin-bottom-0 text-size-30 text-thin text-line-height-1">İki Cismin Mesafe Farkı</h5>
           </header>
-        <div class="section background-white"> 
-            <div class="line">
-                <span style="font-size:large">İki cismin farkını basit bir şekilde almamızı sağlayan kod :<span style="color:orange"> Vector3.Distance (birinci cisim posizyonu , ikinci cisim posizyonu);</span></span>
-                <img src="unityimg/ikicisimarasiuzaklik.png"><br>
-                Projemizde aralarındaki mesafe farkını alacağımız iki cismi bir kod sayfasına <span style="color:red">'GameObject'</span> olarak tanımladıktan sonra 'Vector3.Distance(<span style="color:blue">1.cisminizinadınıyazın</span>.transform.position,<span style="color:blue">2.cisminizinadınıyazın</span>.transform.position) <br><br></BR,>(Eğer cisimleri kod sayfanızda sadece konum farkını almak için kullanacaksanız transform olarak da tanımlayabilirsiniz)<br /><br />
-                <a href="unityexe/FunnyCodersDistanceProject.rar"><span style="font-size:x-large">Projenin .exe dosyası için tıklayın.</span></a><br />
-                <a href="unityprojects/FunnyCodersProject.rar"><span style="font-size:x-large">Projenin unity dosyaları için tıklayın.</span></a>
-            </div>
+          <div class="section background-white">
+              <div class="line">
+                  <span style="font-size:large">İki cismin farkını basit bir şekilde almamızı sağlayan kod :<span style="color:orange"> Vector3.Distance (birinci cisim posizyonu , ikinci cisim posizyonu);</span></span>
+                  <img src="unityimg/ikicisimarasiuzaklik.png"><br>
+                  Projemizde aralarındaki mesafe farkını alacağımız iki cismi bir kod sayfasına <span style="color:red">'GameObject'</span> olarak tanımladıktan sonra 'Vector3.Distance(<span style="color:blue">1.cisminizinadınıyazın</span>.transform.position,<span style="color:blue">2.cisminizinadınıyazın</span>.transform.position) <br><br></BR,>(Eğer cisimleri kod sayfanızda sadece konum farkını almak için kullanacaksanız transform olarak da tanımlayabilirsiniz)<br /><br />
+
+                  <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers ">
+                      <div class="enlighter-toolbar-top enlighter-toolbar">
+                          <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                          <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                          <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                          <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div>
+                      </div><div class="enlighter">
+                          <div class=""><div><span class="enlighter-g1">using System.Collections;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">using System.Collections.Generic;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">using UnityEngine;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">using UnityEngine.UI;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1"></span></div></div>
+                          <div class=""><div><span class="enlighter-g1">public class mesafe : MonoBehaviour</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">{</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">    public Text mesafetext;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">    public GameObject topumuz;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">    [SerializeField] float aradakiuzaklik;</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">void FixedUpdate()</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">    {</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">        aradakiuzaklik = Vector3.Distance(topumuz.transform.position, transform.position);</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">        mesafetext.text = System.Convert.ToString(aradakiuzaklik);</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">    }</span></div></div>
+                          <div class=""><div><span class="enlighter-g1">}</span></div></div>
+
+                      </div>
+                  </div>
+              </div>
+
+              <a href="unityexe/FunnyCodersDistanceProject.rar"><span style="font-size:x-large">Projenin .exe dosyası için tıklayın.</span></a><br />
+              <a href="unityprojects/FunnyCodersProject.rar"><span style="font-size:x-large">Projenin unity dosyaları için tıklayın.</span></a><br /><br />
+
+              <span style="font-family:Chiller">Talha Enes iSLAMOĞLU</span>
+          </div>
         </div> 
       </article>
     </main>

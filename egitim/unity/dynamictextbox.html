@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Unity3D,Unity,text,textbox,boyut,funnycoders" />
+    <meta name="description" content="Unity 3D textbox işlemleri">
+    <meta name="author" content="Talha Enes İslamoğlu">
+    <title>Unity</title>
+    <link rel="stylesheet" href="../../css/components.css">
+
+
+
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/responsee.css">
+    <link rel="stylesheet" href="../../owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../../owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="../../css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/validation.js"></script>
+
+</head>  
+  
+<body class="size-1140">
+
+    <!-- HEADER -->
+    <header class="banner">
+        <!-- Top Bar -->
+        <!-- Top Navigation -->
+        <nav class="background-white background-primary-hightlight">
+            <div class="line">
+                <div class="s-12 l-2">
+                    <a href="../../index.html" class="logo">Funnycoders.com</a>
+                </div>
+                <div class="top-nav s-12 l-10">
+                    <p class="nav-text"></p>
+                    <ul class="right chevron">
+                        <li><a href="../../index.html">Anasayfa</a></li>
+                        <li><a href="../../products.html">Eğitimler</a></li>
+                        <li><a href="../../haber.html">Haber</a></li>
+                        <li><a href="../../about.html">Biz Kimiz?</a></li>
+                        <li><a href="../../forum.html">Forum</a></li>
+                        <li><a href="../../contact.html">İletişim</a></li>
+                        <li><a href="../../signed.html">Giriş / Üye Ol</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main role="main">
+        <!-- Content -->
+        <article>
+            <header class="about_section  background-primary text-center">
+                <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1"><a href="unity_index.html">UNITY</a></h1>
+                <h5 class="text-white margin-bottom-0 text-size-30 text-thin text-line-height-1">Dynamic TextBox</h5>
+            </header>
+            <div class="section background-white">
+                <div class="line">
+                    <span style="font-size:large">Unity oyun motorunda text gibi UI elementlerini kullanabilmek için <span style="color:red">using UnityEngine.UI;</span> kütüptanesini eklememiz gerekiyor.</span><br /><br />
+                    <img src="unityimg/dinamiktextbox.png"><br>
+                    <span style="font-size:medium">
+                        Projemize kullanacağımız textbox'ı script sayfamızda boyutuyla oynama yapabilmek için public RectTransform olarak tanımlayıp kod sayfamız hangi objede ise o objenin inspector kısmındaki gözüken kod sayfamıza hierarcyh kısmından textbox'ımızı sürüklüyoruz.<br />TextBox'ımızın text'ine müdahale edebilmek için ise public Text olarak tanımlayıp kod sayfasına textbox'ı sürükleme işlemini yapıyoruz.<br /><br />TextBox'ın boyutuna müdahale etmek için RectTransform için tanımladığımız değişkeni kullanarak<br /><br /><span style="color:darkred"> "dinamikyazıkutusu2.sizeDelta = new Vector2(dinamikyazıkutusu2.rect.width, dinamikyazıkutusu2.rect.height + buyut);"</span><br /><br /> kodu yazıyoruz.<br /> <br />"dinamikyazıkutusu2.rect.width" bu kod bize textbox'ımızın hali hazırdaki uzunluğunun tekrardan kendisine verilmesini sağlıyor.<br /><br />"dinamikyazıkutusu2.rect.height + buyut" bu kod ise yüksekliğimize boyut değişkenimizin değeri kadar artmasını sağlıyoruz.<br /><br />Kodu bu şekilde kullanırsak textbox'ımız boyut değişkenimizin yarısı kadar aşağı doğru, yarısı kadar yukarıya doğru büyüyecek. Bizim seçeneğimize sabit kalarak yukarı yada aşağı doğru büyümesini istersek<br /><br /><span style="color:darkred"> 'dinamikyazıkutusu2.transform.position = new Vector2(dinamikyazıkutusu2.transform.position.x, dinamikyazıkutusu2.transform.position.y - buyut / 2);'</span><br /><br /> kodu yazarak boyut değişkeninin yarısı kadar aşağıya iterek sanki sabit kalmış da aşağıya doğru büyüme sağlamış oluyoruz.<br />TextBox'ın text'ine müdahale etmek için ise <span style="color:darkred"><br /><br />'dinamikyazıkutusu.text += "Funny Coders" + "\n";'</span> <br /><br />kodunu kullanıyoruz.<br /><br /> (text değişkenimizin ismi).text = string ifade;<br />
+                        <br />
+                        <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers ">
+                            <div class="enlighter-toolbar-top enlighter-toolbar">
+                                <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                                <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                                <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                                <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div>
+                            </div><div class="enlighter">
+                                <div class=""><div><span class="enlighter-g1">using System.Collections;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">using System.Collections.Generic;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">using UnityEngine;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">using UnityEngine.UI;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1"></span></div></div>
+                                <div class=""><div><span class="enlighter-g1">public class dynamiictextbox : MonoBehaviour</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">{</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    float buyut = 45.5f;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    public RectTransform dinamikyazıkutusu2;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    public Text dinamikyazıkutusu;</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">void Start()</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    {</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        StartCoroutine(yaz());</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    }</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">IEnumerator yaz()</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    {</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        dinamikyazıkutusu.text += "Funny Coders" + "\n";</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        dinamikyazıkutusu2.sizeDelta = new Vector2(dinamikyazıkutusu2.rect.width, dinamikyazıkutusu2.rect.height + buyut);</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        dinamikyazıkutusu2.transform.position = new Vector2(dinamikyazıkutusu2.transform.position.x, dinamikyazıkutusu2.transform.position.y - buyut / 2);</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        yield return new WaitForSeconds(5f);</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">        StartCoroutine(yaz());</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">    }</span></div></div>
+                                <div class=""><div><span class="enlighter-g1">}</span></div></div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div><br /><br />
+            <span style="font-family:Chiller">Talha Enes iSLAMOĞLU</span>
+        </article>
+    </main>
+
+    <!--FOOTER -->
+    <footer>
+        <!-- Main Footer -->
+        <section class="section background-dark">
+            <div class="line">
+                <div class="margin">
+                    <!-- Collumn 1 -->
+                    <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+                        <h4 class="text-uppercase text-strong">Our Philosophy</h4>
+                        <p class="text-size-20"><em>"Kodlama alanında insanları bilgilendirirken sameti düdüklemek"</em><p>
+
+                            <div class="line">
+
+                                <div class="margin">
+                                    <div class="s-12 m-12 l-4 margin-m-bottom">
+
+                                    </div>
+                                    <div class="s-12 m-12 l-8 margin-m-bottom">
+
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Collumn 2 -->
+                    <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+                        <h4 class="text-uppercase text-strong">Bize Ulaşın</h4>
+                        <div class="line">
+                            <div class="s-1 m-1 l-1 text-center">
+                                <i class="icon-placepin text-primary text-size-12"></i>
+                            </div>
+                            <div class="s-11 m-11 l-11 margin-bottom-10">
+                                <p><b>Adres:</b> Istanbul</p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="s-1 m-1 l-1 text-center">
+                                <i class="icon-mail text-primary text-size-12"></i>
+                            </div>
+                            <div class="s-11 m-11 l-11 margin-bottom-10">
+                                <p><a href="/" class="text-primary-hover"><b>E-mail:</b> funnycoders.com</a></p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="s-1 m-1 l-1 text-center">
+                                <i class="icon-smartphone text-primary text-size-12"></i>
+                            </div>
+                            <div class="s-11 m-11 l-11 margin-bottom-10">
+                                <p><b>Telefon:</b> 0533 333 33 33</p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="s-1 m-1 l-1 text-center">
+                                <i class="icon-twitter text-primary text-size-12"></i>
+                            </div>
+                            <div class="s-11 m-11 l-11 margin-bottom-10">
+                                <p><a href="/" class="text-primary-hover"><b>Twitter</b></a></p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="s-1 m-1 l-1 text-center">
+                                <i class="icon-facebook text-primary text-size-12"></i>
+                            </div>
+                            <div class="s-11 m-11 l-11">
+                                <p><a href="/" class="text-primary-hover"><b>Facebook</b></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collumn 3 -->
+                    <div class="s-12 m-12 l-4">
+                        <h4 class="text-uppercase text-strong">Mesajınızı iletin</h4>
+                        <form class="customform text-white">
+                            <div class="line">
+                                <div class="margin">
+                                    <div class="s-12 m-12 l-6">
+                                        <input name="email" class="required email border-radius" placeholder="Mail adresinizi girin.." title="Your e-mail" type="text" />
+                                    </div>
+                                    <div class="s-12 m-12 l-6">
+                                        <input name="name" class="name border-radius" placeholder="Adınızı girin.." title="Your name" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-12">
+                                <textarea name="message" class="required message border-radius" placeholder="İletmek istediğiniz mesaj.." rows="3"></textarea>
+                            </div>
+                            <div class="s-12"><button class="submit-form button background-primary border-radius text-white" type="submit">İletin</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+
+        <!-- Bottom Footer -->
+        <section class="padding background-dark">
+            <div class="line">
+                <div class="s-12 l-6">
+                    <p class="text-size-12">Copyright 2022, Funnycoders Technology </p>
+                    <p class="text-size-12">All images have been purchased from Funnycoders Technology A.Ş. Do not use the images in your website.</p>
+                </div>
+                <div class="s-12 l-6">
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+
+</body>
+</html>
