@@ -37,7 +37,7 @@ a, a:link, a:visited, a:hover, a:active {
   -moz-transition:color 0.20s linear 0s;
   -webkit-transition:color 0.20s linear 0s;
 }  
-a:hover {color:#B6C900;}
+a:hover {color:#152732;}
 p,li,dl,blockquote,table,kbd {
   font-size: 0.85rem;
   line-height: 1.6;
@@ -251,7 +251,7 @@ nav.breadcrumb-nav ul {
 }
 nav.breadcrumb-nav ul li {float:left;}
 nav.breadcrumb-nav ul li a:hover {text-decoration:underline;}
-.breadcrumb-nav i {color:#B6C900;}
+.breadcrumb-nav i {color:#152732;}
 nav.breadcrumb-nav ul li:after {
   content:"/";
   margin:0 9px;

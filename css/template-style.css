@@ -204,7 +204,7 @@ td {border-right:1px solid #fff;}
 .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited,
 .primary-color-primary .background-primary-hightlight .top-nav .active-item > a, .primary-color-primary .background-primary-hightlight .top-nav li a:hover, .primary-color-primary .background-primary-hightlight .aside-nav li a:hover, 
 .primary-color-primary .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-primary .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
-  background: #49BF4C none repeat scroll 0 0;
+  background: #002633 none repeat scroll 0 0;
   color: #fff;
 }
 .background-dark-hightlight .top-nav .active-item > a, .background-dark-hightlight .top-nav li a:hover, .background-dark-hightlight .aside-nav li a:hover, 
@@ -420,7 +420,7 @@ aside.aside-left {
 
 .aside-nav.background-primary-hightlight > ul > li > a:hover, .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited,
 .primary-color-primary .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
-  border-color: #49BF4C;
+  border-color: #152732;
 }  
 .aside-nav.background-dark-hightlight > ul > li > a:hover, .aside-nav.background-dark-hightlight > ul > li.active-item > a:link, .aside-nav.background-dark-hightlight > ul > li.active-item > a:visited,
 .primary-color-dark .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
@@ -487,7 +487,7 @@ aside.aside-left {
   background-color: #fff !important;
 }
 .background-primary, .primary-color-primary .background-primary {
-  background-color: #49BF4C !important;
+  background-color: #152732 !important;
 }
 .background-dark, .primary-color-dark .background-primary {
   background-color: #002633 !important; 
@@ -613,13 +613,13 @@ aside.aside-left {
 .button.button-primary-stroke, a.button.button-primary-stroke, a.button.button-primary-stroke:link, a.button.button-primary-stroke:visited,
 .primary-color-primary .button.button-primary-stroke, .primary-color-primary a.button.button-primary-stroke, .primary-color-primary a.button.button-primary-stroke:link, .primary-color-primary a.button.button-primary-stroke:visited {
   background: none;
-  border: 1px solid #49BF4C;
+  border: 1px solid #152732;
   box-shadow: none;
   color: #49BF4C;
 }
 .button.button-primary-stroke:hover, a.button.button-primary-stroke:hover,
 .primary-color-primary .button.button-primary-stroke:hover, .primary-color-primary a.button.button-primary-stroke:hover {
-  background: #49BF4C none repeat scroll 0 0;
+  background: #152732 none repeat scroll 0 0;
   color: #fff;
 }
 
@@ -1176,7 +1176,7 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover,
 }
 .background-primary-hightlight a.tab-label.active-btn, .background-primary-hightlight a.tab-label:hover,
 .primary-color-primary .background-primary-hightlight a.tab-label.active-btn, .primary-color-primary .background-primary-hightlight a.tab-label:hover {
-  background: #49BF4C none repeat scroll 0 0;
+  background: #152732 none repeat scroll 0 0;
   color: #fff;
 }
 .background-dark-hightlight a.tab-label.active-btn, .background-dark-hightlight a.tab-label:hover,
@@ -1206,7 +1206,7 @@ p.form-error {
   text-align: center;
 }
 p.form-success {
-  background-color: #9bdd42;
+  background-color: #152732;
   color: #fff;
   display: none;
   font-size: 0.85rem;
