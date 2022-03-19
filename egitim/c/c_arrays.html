@@ -4,10 +4,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="C,void,main,function,fonksiyon,funnycoders,return,int,float,double,char"/>
-    <meta name="description" content="C Programlama Fonksiyon">
+    <meta name="keywords" content="C,dizi,diziler,arrays,string,funnycoders,tekboyutludizi,int,float,double,char"/>
+    <meta name="description" content="C Programlama Dizi(Arrays)">
     <meta name="author" content="Mehmet Cantemir">
-    <title>C Programlama Fonksiyonlar</title>
+    <title>C Programlama Diziler</title>
     <link rel="stylesheet" href="../../css/components.css">
 
 
@@ -59,23 +59,24 @@
       <!-- Content -->
       <article>
           <header class="about_section  background-primary text-center">
-              <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1"><a href="c_function.html">C Programlama Diziler (Array)</a></h1>          
+              <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1"><a href="c_function.html">C Programlama Diziler (Arrays)</a></h1>          
           </header>
         <div class="section background-white"> 
-           <b> <span style="color: black;">Programlamada belli işleri birden fazla tekrarlayacaksak eğer döngüleri kullanırız. </span><br>
-            <span style="color: black;">Basit bir şekilde örneklemek gerekirse bir sayıyı 100 defa yazmak veya 1'den 200'e kadar sayıları ekrana yazdırmak.</span>
-            <span style="color: black;">Döngüleri kullanmadan bu örnekleri yapmak istersek çok fazla kod yazmamız gerekir ve bu hoş ve mantıklı olmaz. Döngülerle bu tarz işleri kısaltıyoruz.</span>
-        </b>
         <br><br>
         <br><br>
-            <center><h1><b>FOR Döngüsü</b></h1></center>
+            <center><h1><b>Dizi Tanımlama </b></h1></center>
             <br><br>
             
         
             <br>
-            <center><img src="../c/c_img/c_for_kod.png"> </center>
-         
-         <br>
+            <center><img src="../c/c_img/c_array_tanıma.png"> </center>
+            <br><br>
+            <center><h1><b>Dizilere Değer Atama </b></h1></center>
+            <center><h2>Index numaralarına göre değer atama</h2></center>
+            <center><img src="../c/c_img/array_veri_ekleme_kod_1.png"></center>
+
+            <br><br>
+        
 
             <!-- Kod kısmı-->
             <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
@@ -88,12 +89,13 @@
                 <!-- Main Fonksiyonu -->
                 <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
                 <!-- Değişken Tanımlama -->
-                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">i = 10;</span></div></div>
-                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">for </span><span class="enlighter-g1">(i = 0 ; i < 10 ; i++ ){</span></div></div>
-                
+                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">dizi [20];</span></div></div>
+                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-g1">dizi [0]=1;</span></div></div>
+                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-g1">dizi [1]=2;</span></div></div>
+                <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-g1">dizi [20]=15;</span></div></div>
                 <!-- Printf Fonksiyonu -->
-                <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("i = %d \n ",i);</span></div></div>
-                <div class=""><div>     <span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("dizi[0] : %d  dizi[1]: %d  dizi[20] : %d",dizi[0],dizi[1],dizi[20]);</span></div></div>
+                
             
                 <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
                 <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
@@ -102,10 +104,10 @@
                 </div>
    
 
-                <center><h1><b>While Döngüsü</b></h1></center>
+                <center><h1><b>Parantez İçinde Değer Atama</b></h1></center>
                 <br>
                
-                <center><img src="../c/c_img/while_kod.png"></center><br>
+                <center><img src="../c/c_img/veri_ekleme_2_kod.png"></center><br>
                     
                 
                 <br>
@@ -121,14 +123,13 @@
                     <!-- Main Fonksiyonu -->
                     <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
                     <!-- Değişken Tanımlama -->
-                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">sayac = 0;</span></div></div>
-                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">while </span><span class="enlighter-g1">(sayac = 0 ; sayac < 10 ; sayac++ ){</span></div></div>
+                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">dizi[20] = {1,2,3,4,5,6,7};</span></div></div>
+                    
                     
                     <!-- Printf Fonksiyonu -->
                    
-                    <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("sayaç = %d \n ",sayac);</span></div></div>
-                    <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-g1">sayac++;</span></div></div>
-                    <div class=""><div>     <span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                    <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("dizi[0] : %d  dizi[1] : %d  dizi[3] : %d  dizi[4] : %d  dizi[5] : %d",dizi[0],dizi[1],dizi[2],dizi[3],dizi[4]);</span></div></div>
+                  
                 
                     <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
                     <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
@@ -136,9 +137,9 @@
                     </div>
                     </div>
 
-                    <center><h1><b>Do-While Döngüsü</b></h1></center>
+                    <center><h1><b>Döngü ile Değer Atama</b></h1></center>
                     <br>
-                    <center><img src="../c/c_img/do_while.png"></center><br>
+                    <center><img src="../c/c_img/veri_ekleme_3_kod.png"></center><br>
 
                     <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
                         <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
@@ -150,21 +151,49 @@
                         <!-- Main Fonksiyonu -->
                         <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
                         <!-- Değişken Tanımlama -->
-                        <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">sayac = 0;</span></div></div>
-                        <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">do </span></div></div>
+                        <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">int </span><span class="enlighter-g1">dizi [20];</span></div></div>
+                        <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">for </span><span class="enlighter-g1">(int i=0 ; i < 20 ; i++)</span></div></div>
                         <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-g1">{</span></div></div>
                         <!-- Printf Fonksiyonu -->
                        
-                        <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("  %d \n ",sayac);</span></div></div>
-                        <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-g1">sayac++;</span></div></div>
-                        <div class=""><div>     <span class="enlighter-text"></span><span class="enlighter-g1">}</span><span class="enlighter-x1">while </span><span class="enlighter-g1">(sayac < 10);</span></div></div>
+                        <div class=""><div>         <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("  %d ",dizi[i]);</span></div></div>
+                    
+                        <div class=""><div>     <span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
                     
                         <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
                         <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
                         </div>
                         </div>
                         </div>
-    
+                        
+                        <center><h1><b>Karakter Dizileri</b></h1></center>
+                        <br>
+                        <center> <img src="../c/c_img/string_array_kod.png"></center>
+
+
+                        <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
+                          <div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div>
+                          <div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div>
+                          <div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div>
+                          <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
+                          <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+          
+                          <!-- Main Fonksiyonu -->
+                          <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                          <!-- Değişken Tanımlama -->
+                          <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">char </span><span class="enlighter-g1">name [20]="mehmet";</span></div></div>
+                          
+                          
+                          <!-- Printf Fonksiyonu -->
+                         
+                          <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("%s",name);</span></div></div>   
+                          <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("%c",name[0]);</span></div></div>               
+                      
+                          <div class=""><div>    <span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
+                          <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
+                          </div>
+                          </div>
+                          </div>
                     
 
         </div> <br /><br /><span style="font-family:Chiller">Mehmet CANTEMIR</span>
