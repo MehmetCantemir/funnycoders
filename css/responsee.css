@@ -952,12 +952,25 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   float:left;
   padding:5px;
   margin:18px;
+ 
 
 }
+
 
 .kutu:hover  img{
   transform: scale(1.10);
   transition:all .5s ease;
+}
+
+.kutu1
+{
+  width: 20%;
+  height:200px;
+  float:left;
+  padding:5px;
+  margin:30px;
+ 
+
 }
 
 
