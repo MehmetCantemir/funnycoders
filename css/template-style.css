@@ -137,7 +137,7 @@ a.text-tag:link {
   padding: 6px 9px;
 }
 a.text-tag:link:hover {
-  background: #002633 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   border: 1px solid #002633;
   color: #fff;
   transition: all 0.20s linear 0s;
@@ -211,7 +211,7 @@ td {border-right:1px solid #fff;}
 .background-dark-hightlight .aside-nav > ul > li.active-item > a:link, .background-dark-hightlight .aside-nav > ul > li.active-item > a:visited,
 .primary-color-dark .background-primary-hightlight .top-nav .active-item > a, .primary-color-dark .background-primary-hightlight .top-nav li a:hover, .primary-color-dark .background-primary-hightlight .aside-nav li a:hover, 
 .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
-  background: #002633 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: #fff;
 }
 .background-none {
@@ -420,11 +420,11 @@ aside.aside-left {
 
 .aside-nav.background-primary-hightlight > ul > li > a:hover, .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited,
 .primary-color-primary .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
-  border-color: #152732;
+  border-color: white;
 }  
 .aside-nav.background-dark-hightlight > ul > li > a:hover, .aside-nav.background-dark-hightlight > ul > li.active-item > a:link, .aside-nav.background-dark-hightlight > ul > li.active-item > a:visited,
 .primary-color-dark .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
-  border-color: #002633;
+  border-color: #0d0e0e;
 }
 
 /* Font colors */
@@ -619,7 +619,7 @@ aside.aside-left {
 }
 .button.button-primary-stroke:hover, a.button.button-primary-stroke:hover,
 .primary-color-primary .button.button-primary-stroke:hover, .primary-color-primary a.button.button-primary-stroke:hover {
-  background: #152732 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: #fff;
 }
 
@@ -632,7 +632,7 @@ aside.aside-left {
 }
 .button.button-dark-stroke:hover, a.button.button-dark-stroke:hover,
 .primary-color-dark .button.button-primary-stroke:hover, .primary-color-dark a.button.button-primary-stroke:hover {
-  background: #002633 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: #fff;
 }
 
@@ -1161,7 +1161,7 @@ display:none;
 }
 a.tab-label, a.tab-label:link, a.tab-label:visited,
 .background-white a.tab-label, .background-white a.tab-label:link, .background-white a.tab-label:visited, .background-white a.tab-label:hover {
-  background: #002633 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: rgba(255,255,255, 0.75);
 }
 a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover,
@@ -1176,12 +1176,12 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover,
 }
 .background-primary-hightlight a.tab-label.active-btn, .background-primary-hightlight a.tab-label:hover,
 .primary-color-primary .background-primary-hightlight a.tab-label.active-btn, .primary-color-primary .background-primary-hightlight a.tab-label:hover {
-  background: #152732 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: #fff;
 }
 .background-dark-hightlight a.tab-label.active-btn, .background-dark-hightlight a.tab-label:hover,
 .primary-color-dark .background-primary-hightlight a.tab-label.active-btn, .primary-color-dark .background-primary-hightlight a.tab-label:hover {
-  background: #002633 none repeat scroll 0 0;
+  background: #0d0e0e none repeat scroll 0 0;
   color: #fff;
 }
 
@@ -1206,7 +1206,7 @@ p.form-error {
   text-align: center;
 }
 p.form-success {
-  background-color: #152732;
+  background-color: #0d0e0e;
   color: #fff;
   display: none;
   font-size: 0.85rem;
@@ -1245,14 +1245,14 @@ p.form-success {
       vertical-align: middle;
     }
     .nav-text::after {
-      color: #002633;
+      color: #0d0e0e;
       display: inline-block;
       font-size: 3rem;
       margin-left: 0;
       margin-top: 30px;
     }
     .top-nav li a, .background-white .top-nav li a {
-      background: #002633 none repeat scroll 0 0;
+      background: #0d0e0e none repeat scroll 0 0;
       color: #fff;
       font-size: 1.1em;
       padding: 1em;
