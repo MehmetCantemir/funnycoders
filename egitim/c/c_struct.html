@@ -4,10 +4,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="C,if,else,else-if,koşul,funnycoders,switch,case,break,conditions,or,and,not,eşittir,küçüktür,büyüktür,eşit,küçük,büyük,equalityforc"/>
-    <meta name="description" content="C Programlama Koşul İfadeleri">
+    <meta name="keywords" content="C,struct,yapı,sınıflandırma,cnesne,funnycoders,structinc,structures,union,typedef"/>
+    <meta name="description" content="C Programlama Yapılar (STRUCT)">
     <meta name="author" content="Mehmet Cantemir">
-    <title>C Programlama Koşul İfadeleri</title>
+    <title>C Programlama Yapılar (STRUCT)</title>
     <link rel="stylesheet" href="../../css/components.css">
 
 
@@ -59,23 +59,26 @@
       <!-- Content -->
       <article>
           <header class="about_section  background-primary text-center">
-              <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">C Koşul İfadeleri</h1>          
+              <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Yapılar (STRUCTS)</h1>          
           </header>
         <div class="section background-white"> 
-            <center><h2><b>Eşitlik Operatörleri (Equational Operators)</b></h2></center>
+            <center><h2><b>Main Fonksiyonu Dışında struct Tanımlama</b></h2></center>
             <br>
-            <img src="../c/c_img/c_esitlik_operator.png">
-            <br><br><br><br>
+            <center><img src="../c/c_img/struct_tanım.png"></center>
+            <br><br>
 
 
-                <center><h2><b>Mantıksal Operatörler (Logical Operators)</b></h2></center>
+                <center><h2><b>Main Fonksiyonu İçinde struct Tanımlama</b></h2></center>
                 <br>
                
-                <img src="../c/c_img/c_logical_operations.png"><br>
+                <center><img src="../c/c_img/struct_tanımlama_mainic.png"></center><br>
                     
                 
-                <center><h2><b>IF - ELSE - ELSE IF YAPISI</b></h2></center>
-                <center><img src="../c/c_img/c_if_code.png"></center>
+                <center><h2><b>Değişkenlere Değer Atama</b></h2></center>
+                <center><img src="../c/c_img/struct_deger_atama.png"></center>
+
+                <center><h2><b>Struct Değişkenlerini Ekrana Yazdırma</b></h2></center>
+                <center><img src="../c/c_img/struct_last.png"></center>
                  
                 
                 <div class="enlighter-default enlighter-v-standard enlighter-t-enlighter enlighter-hover enlighter-linenumbers "><div class="enlighter-toolbar-top enlighter-toolbar">
@@ -85,23 +88,37 @@
                     <div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" >
                     <!-- Include Kısmı -->
                     <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">stdio.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                    <div class=""><div><span class="enlighter-g1"></span><span class="enlighter-g1">#include </span><span class="enlighter-g1">&lt;<span class="enlighter-x1">string.h</span>&gt;</span><span class="enlighter-text"></span></div></div>
+                  
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+
+                    <!-- Struct  Tanımlama-->
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">struct  </span><span class="enlighter-g1">infoPerson{</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">char  </span><span class="enlighter-g1">name[15];</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">char  </span><span class="enlighter-g1">surname[15] ;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">age;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">salary;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    
+                    <!-- Main Fonksiyonu-->
                     <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-x1">main</span><span class="enlighter-g1">(){</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
                     <!-- Değişken Tanımlama -->
-                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">int </span><span class="enlighter-g1">a = 15 , b = 20 ;</span></div></div>
-                    <!-- IF ELSE YAPISI-->
-                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">if </span><span class="enlighter-g1">(a < b)</span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">{</span></div></div>
-                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("a b'den küçüktür ");</span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">}</span></div></div>
-                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">else if </span><span class="enlighter-g1">(a > b)</span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">{</span></div></div>
-                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("a b'den büyüktür. ");</span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">}</span></div></div>
-                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">else </span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">{</span></div></div>
-                    <div class=""><div><span class="enlighter-text">    </span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("a ve b eşittir ");</span></div></div>
-                    <div class=""><div><span class="enlighter-text"><span class="enlighter-g1">}</span></div></div>
-                     <!-- Return -->
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">struct </span><span class="enlighter-g1">infoPerson firstPerson = { "Mehmet" , "Cantemir" , 25 , 0};</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">strcpy </span><span class="enlighter-g1">(firstPerson.name,"Mehmet");</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">strcpy </span><span class="enlighter-g1">(firstPerson.surname,"Cantemir");</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">firsPerson.age=25;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">firsPerson.salary=25;</span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1"></span></div></div>
+                    <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">printf</span><span class="enlighter-g1">("\n Name: %s  Surname: %s  Age : %d  Salary : %d ",firstPerson.name,firstPerson.surname,firstPerson.age,firstPerson.salary);</span></div></div>
+                    <!-- Return -->
                     <div class=""><div><span class="enlighter-text"></span><span class="enlighter-x1">return</span><span class="enlighter-g1"> 0;</span></div></div>
                     <div class=""><div><span class="enlighter-text"></span><span class="enlighter-g1">}</span></div></div>
                     </div>
